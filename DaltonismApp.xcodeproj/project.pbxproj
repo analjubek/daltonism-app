@@ -13,6 +13,7 @@
 		F6FD472E282A9BE100256DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FD472C282A9BE100256DE5 /* Main.storyboard */; };
 		F6FD4730282A9BE200256DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6FD472F282A9BE200256DE5 /* Assets.xcassets */; };
 		F6FD4733282A9BE200256DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FD4731282A9BE200256DE5 /* LaunchScreen.storyboard */; };
+		F6FD473C282ADB2000256DE5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6FD473B282ADB2000256DE5 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FD473C282ADB2000256DE5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = DaltonismApp;
+			packageProductDependencies = (
+				F6FD473B282ADB2000256DE5 /* SnapKit */,
+			);
 			productName = DaltonismApp;
 			productReference = F6FD4723282A9BE100256DE5 /* DaltonismApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F6FD471A282A9BE100256DE5;
+			packageReferences = (
+				F6FD473A282ADB2000256DE5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F6FD4724282A9BE100256DE5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6FD473A282ADB2000256DE5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6FD473B282ADB2000256DE5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6FD473A282ADB2000256DE5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6FD471B282A9BE100256DE5 /* Project object */;
 }
