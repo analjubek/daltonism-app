@@ -16,6 +16,8 @@
 		F6FD473C282ADB2000256DE5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6FD473B282ADB2000256DE5 /* SnapKit */; };
 		F6FD473E282ADC0900256DE5 /* DescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD473D282ADC0900256DE5 /* DescriptionController.swift */; };
 		F6FD4740282ADCB400256DE5 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD473F282ADCB400256DE5 /* TopBarView.swift */; };
+		F6FD4742282B115300256DE5 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD4741282B115300256DE5 /* MainController.swift */; };
+		F6FD4744282B121E00256DE5 /* RedDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD4743282B121E00256DE5 /* RedDescriptionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		F6FD4734282A9BE200256DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6FD473D282ADC0900256DE5 /* DescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionController.swift; sourceTree = "<group>"; };
 		F6FD473F282ADCB400256DE5 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		F6FD4741282B115300256DE5 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		F6FD4743282B121E00256DE5 /* RedDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedDescriptionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,10 @@
 				F6FD472F282A9BE200256DE5 /* Assets.xcassets */,
 				F6FD4731282A9BE200256DE5 /* LaunchScreen.storyboard */,
 				F6FD4734282A9BE200256DE5 /* Info.plist */,
-				F6FD473D282ADC0900256DE5 /* DescriptionController.swift */,
+				F6FD4741282B115300256DE5 /* MainController.swift */,
 				F6FD473F282ADCB400256DE5 /* TopBarView.swift */,
+				F6FD473D282ADC0900256DE5 /* DescriptionController.swift */,
+				F6FD4743282B121E00256DE5 /* RedDescriptionController.swift */,
 			);
 			path = DaltonismApp;
 			sourceTree = "<group>";
@@ -156,7 +162,9 @@
 				F6FD472B282A9BE100256DE5 /* ViewController.swift in Sources */,
 				F6FD4727282A9BE100256DE5 /* AppDelegate.swift in Sources */,
 				F6FD473E282ADC0900256DE5 /* DescriptionController.swift in Sources */,
+				F6FD4742282B115300256DE5 /* MainController.swift in Sources */,
 				F6FD4729282A9BE100256DE5 /* SceneDelegate.swift in Sources */,
+				F6FD4744282B121E00256DE5 /* RedDescriptionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
