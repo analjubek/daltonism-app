@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         else { return }
         
         window = UIWindow(windowScene: windowScene)
-        let vc = RedDescriptionController()
+        let vc = BlueDescriptionController()
         window!.rootViewController = vc
         window?.makeKeyAndVisible()
     }

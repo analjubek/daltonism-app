@@ -1,5 +1,5 @@
 //
-//  RedDescriptionController.swift
+//  BlueDescriptionController.swift
 //  DaltonismApp
 //
 //  Created by Ana Ljubek on 10.05.2022..
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class RedDescriptionController: UIViewController{
+class BlueDescriptionController: UIViewController{
     
     private var topBarView: TopBarView!
     
@@ -50,16 +50,16 @@ class RedDescriptionController: UIViewController{
           titleContent = UILabel()
           contentView.addSubview(titleContent)
           titleContent.textColor = .black
-          titleContent.text = "Poremećaj prepoznavanja crvene boje"
+          titleContent.text = "Poremećaj prepoznavanja plave boje"
           titleContent.font = UIFont.boldSystemFont(ofSize: 20)
           titleContent.numberOfLines = 0
           
           descriptionContent = UILabel()
           contentView.addSubview(descriptionContent)
           descriptionContent.textColor = .black
-          descriptionContent.text = "   Protanopija je težak poremećaj, koji se javlja kad nedostaju čunjevi za prepoznavanje crvene boje, dok je protanomalija manje težak poremećaj, gdje čunjevi za prepoznavanje crvene boje postoje, no ne funkcioniraju normalno."
-          + "\n\n   Poremećaji prepoznavanja crvene boje su nasljedni i vrlo česti."
-          + "\n\n   U nastavku slijede primjeri kako osobe s protanopijom ili protanomalijom vide svijet."
+          descriptionContent.text = "   Tritanopija je težak poremećaj, koji se javlja kad nedostaju čunjevi za prepoznavanje plave boje, dok je tritanomalija manje težak poremećaj, gdje čunjevi za prepoznavanje plave boje postoje, no ne funkcioniraju normalno."
+          + "\n\n   Poremećaji prepoznavanja plave boje su izuzetno rijetki. Stečeni daltonizam češće pogađa poremećaje vida plave/žute boje i u nekim slučajevima može se popraviti. Ne postoji lijek za stečeni daltonizam."
+          + "\n\n   U nastavku slijede primjeri kako osobe s tritanopijom ili tritanomalijom vide svijet."
           descriptionContent.font = UIFont(name: "San Francisco", size: 20)
           descriptionContent.numberOfLines = 0
           
@@ -92,7 +92,7 @@ class RedDescriptionController: UIViewController{
           descriptionContent.snp.makeConstraints {
               $0.top.equalTo(titleContent.snp.bottom).offset(10)
               $0.leading.trailing.equalToSuperview().inset(12)
-              $0.height.equalTo(270)
+              $0.height.equalTo(320)
           }
           imageView.snp.makeConstraints{
               $0.top.equalTo(descriptionContent.snp.bottom).offset(10)

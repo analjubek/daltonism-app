@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F621E5BD282B16F7009F3B4A /* GreenDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621E5BC282B16F7009F3B4A /* GreenDescriptionController.swift */; };
+		F621E5BF282B1793009F3B4A /* BlueDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F621E5BE282B1793009F3B4A /* BlueDescriptionController.swift */; };
 		F6FD4727282A9BE100256DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD4726282A9BE100256DE5 /* AppDelegate.swift */; };
 		F6FD4729282A9BE100256DE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD4728282A9BE100256DE5 /* SceneDelegate.swift */; };
 		F6FD472B282A9BE100256DE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD472A282A9BE100256DE5 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F621E5BC282B16F7009F3B4A /* GreenDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDescriptionController.swift; sourceTree = "<group>"; };
+		F621E5BE282B1793009F3B4A /* BlueDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueDescriptionController.swift; sourceTree = "<group>"; };
 		F6FD4723282A9BE100256DE5 /* DaltonismApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaltonismApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FD4726282A9BE100256DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6FD4728282A9BE100256DE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				F6FD473F282ADCB400256DE5 /* TopBarView.swift */,
 				F6FD473D282ADC0900256DE5 /* DescriptionController.swift */,
 				F6FD4743282B121E00256DE5 /* RedDescriptionController.swift */,
+				F621E5BC282B16F7009F3B4A /* GreenDescriptionController.swift */,
+				F621E5BE282B1793009F3B4A /* BlueDescriptionController.swift */,
 			);
 			path = DaltonismApp;
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F621E5BD282B16F7009F3B4A /* GreenDescriptionController.swift in Sources */,
 				F6FD4740282ADCB400256DE5 /* TopBarView.swift in Sources */,
+				F621E5BF282B1793009F3B4A /* BlueDescriptionController.swift in Sources */,
 				F6FD472B282A9BE100256DE5 /* ViewController.swift in Sources */,
 				F6FD4727282A9BE100256DE5 /* AppDelegate.swift in Sources */,
 				F6FD473E282ADC0900256DE5 /* DescriptionController.swift in Sources */,

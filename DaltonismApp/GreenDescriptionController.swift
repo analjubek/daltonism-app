@@ -1,5 +1,5 @@
 //
-//  RedDescriptionController.swift
+//  GreenDescriptionController.swift
 //  DaltonismApp
 //
 //  Created by Ana Ljubek on 10.05.2022..
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class RedDescriptionController: UIViewController{
+class GreenDescriptionController: UIViewController{
     
     private var topBarView: TopBarView!
     
@@ -50,16 +50,16 @@ class RedDescriptionController: UIViewController{
           titleContent = UILabel()
           contentView.addSubview(titleContent)
           titleContent.textColor = .black
-          titleContent.text = "Poremećaj prepoznavanja crvene boje"
+          titleContent.text = "Poremećaj prepoznavanja zelene boje"
           titleContent.font = UIFont.boldSystemFont(ofSize: 20)
           titleContent.numberOfLines = 0
           
           descriptionContent = UILabel()
           contentView.addSubview(descriptionContent)
           descriptionContent.textColor = .black
-          descriptionContent.text = "   Protanopija je težak poremećaj, koji se javlja kad nedostaju čunjevi za prepoznavanje crvene boje, dok je protanomalija manje težak poremećaj, gdje čunjevi za prepoznavanje crvene boje postoje, no ne funkcioniraju normalno."
-          + "\n\n   Poremećaji prepoznavanja crvene boje su nasljedni i vrlo česti."
-          + "\n\n   U nastavku slijede primjeri kako osobe s protanopijom ili protanomalijom vide svijet."
+          descriptionContent.text = "   Deuteranopija je težak poremećaj, koji se javlja kad nedostaju čunjevi za prepoznavanje zelene boje, dok je deuteranomalija manje težak poremećaj, gdje čunjevi za prepoznavanje zelene boje postoje, no ne funkcioniraju normalno."
+          + "\n\n   Poremećaji prepoznavanja zelene boje su nasljedni i vrlo česti."
+          + "\n\n   U nastavku slijede primjeri kako osobe s deuteranopijom ili deuteranomalijom vide svijet."
           descriptionContent.font = UIFont(name: "San Francisco", size: 20)
           descriptionContent.numberOfLines = 0
           
