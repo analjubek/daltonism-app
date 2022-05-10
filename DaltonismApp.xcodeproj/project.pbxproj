@@ -14,6 +14,8 @@
 		F6FD4730282A9BE200256DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6FD472F282A9BE200256DE5 /* Assets.xcassets */; };
 		F6FD4733282A9BE200256DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6FD4731282A9BE200256DE5 /* LaunchScreen.storyboard */; };
 		F6FD473C282ADB2000256DE5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6FD473B282ADB2000256DE5 /* SnapKit */; };
+		F6FD473E282ADC0900256DE5 /* DescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD473D282ADC0900256DE5 /* DescriptionController.swift */; };
+		F6FD4740282ADCB400256DE5 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD473F282ADCB400256DE5 /* TopBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		F6FD472F282A9BE200256DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6FD4732282A9BE200256DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6FD4734282A9BE200256DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6FD473D282ADC0900256DE5 /* DescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionController.swift; sourceTree = "<group>"; };
+		F6FD473F282ADCB400256DE5 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				F6FD472F282A9BE200256DE5 /* Assets.xcassets */,
 				F6FD4731282A9BE200256DE5 /* LaunchScreen.storyboard */,
 				F6FD4734282A9BE200256DE5 /* Info.plist */,
+				F6FD473D282ADC0900256DE5 /* DescriptionController.swift */,
+				F6FD473F282ADCB400256DE5 /* TopBarView.swift */,
 			);
 			path = DaltonismApp;
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FD4740282ADCB400256DE5 /* TopBarView.swift in Sources */,
 				F6FD472B282A9BE100256DE5 /* ViewController.swift in Sources */,
 				F6FD4727282A9BE100256DE5 /* AppDelegate.swift in Sources */,
+				F6FD473E282ADC0900256DE5 /* DescriptionController.swift in Sources */,
 				F6FD4729282A9BE100256DE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
