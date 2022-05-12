@@ -18,7 +18,10 @@ class RedDescriptionController: UIViewController{
     private var titleContent: UILabel!
     private var descriptionContent: UILabel!
     
-    private var imageView: UIImageView!
+    private var exampleView1: UIImageView!
+    private var exampleView2: UIImageView!
+    private var exampleView3: UIImageView!
+    private var exampleView4: UIImageView!
       
       init(){
           super.init(nibName: nil, bundle: nil)
@@ -63,11 +66,29 @@ class RedDescriptionController: UIViewController{
           descriptionContent.font = UIFont(name: "San Francisco", size: 20)
           descriptionContent.numberOfLines = 0
           
-          let image = UIImage(named: "daltonizam")
-          imageView = UIImageView(image: image)
-          contentView.addSubview(imageView)
-          imageView.contentMode = .scaleAspectFit
-          imageView.clipsToBounds = true
+          let origImage1 = UIImage(named: "rgb")
+          exampleView1 = UIImageView(image: origImage1)
+          contentView.addSubview(exampleView1)
+          exampleView1.contentMode = .scaleAspectFit
+          exampleView1.clipsToBounds = true
+          
+          let gImage1 = UIImage(named: "r")
+          exampleView2 = UIImageView(image: gImage1)
+          contentView.addSubview(exampleView2)
+          exampleView2.contentMode = .scaleAspectFit
+          exampleView2.clipsToBounds = true
+          
+          let origImage2 = UIImage(named: "rgb2")
+          exampleView3 = UIImageView(image: origImage2)
+          contentView.addSubview(exampleView3)
+          exampleView3.contentMode = .scaleAspectFit
+          exampleView3.clipsToBounds = true
+          
+          let gImage2 = UIImage(named: "2r")
+          exampleView4 = UIImageView(image: gImage2)
+          contentView.addSubview(exampleView4)
+          exampleView4.contentMode = .scaleAspectFit
+          exampleView4.clipsToBounds = true
           
       }
       
@@ -94,12 +115,31 @@ class RedDescriptionController: UIViewController{
               $0.leading.trailing.equalToSuperview().inset(12)
               $0.height.equalTo(270)
           }
-          imageView.snp.makeConstraints{
+          exampleView1.snp.makeConstraints{
               $0.top.equalTo(descriptionContent.snp.bottom).offset(10)
-              $0.leading.trailing.equalToSuperview()
-              $0.width.equalToSuperview().inset(10)
-              $0.height.equalTo(400)
-              $0.bottom.equalToSuperview().inset(12)
+              $0.leading.equalToSuperview()
+              $0.width.equalToSuperview().dividedBy(2)
+              $0.height.equalTo(150)
+          }
+          exampleView2.snp.makeConstraints{
+              $0.top.equalTo(descriptionContent.snp.bottom).offset(10)
+              $0.leading.equalTo(exampleView1.snp.trailing)
+              $0.width.equalToSuperview().dividedBy(2)
+              $0.height.equalTo(150)
+          }
+          exampleView3.snp.makeConstraints{
+              $0.top.equalTo(exampleView1.snp.bottom).offset(10)
+              $0.leading.equalToSuperview()
+              $0.width.equalToSuperview().dividedBy(2)
+              $0.height.equalTo(150)
+              $0.bottom.equalToSuperview()
+          }
+          exampleView4.snp.makeConstraints{
+              $0.top.equalTo(exampleView1.snp.bottom).offset(10)
+              $0.leading.equalTo(exampleView1.snp.trailing)
+              $0.width.equalToSuperview().dividedBy(2)
+              $0.height.equalTo(150)
+              $0.bottom.equalToSuperview()
           }
       }
 }
