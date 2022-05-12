@@ -79,6 +79,37 @@ class MainController: UIViewController {
         btnB.layer.cornerRadius = 10
         btnHelp.layer.cornerRadius = 10
         
+        btnAbout.translatesAutoresizingMaskIntoConstraints = false
+        btnR.translatesAutoresizingMaskIntoConstraints = false
+        btnG.translatesAutoresizingMaskIntoConstraints = false
+        btnB.translatesAutoresizingMaskIntoConstraints = false
+        btnHelp.translatesAutoresizingMaskIntoConstraints = false
+        
+        btnAbout.addTarget(self, action: #selector(openDescriptionController), for: .touchUpInside)
+        btnR.addTarget(self, action: #selector(openRedDescriptionController), for: .touchUpInside)
+        btnG.addTarget(self, action: #selector(openGreenDescriptionController), for: .touchUpInside)
+        btnB.addTarget(self, action: #selector(openBlueDescriptionController), for: .touchUpInside)
+        btnHelp.addTarget(self, action: #selector(openAdvicesController), for: .touchUpInside)
+    }
+    
+    @objc private func openDescriptionController(){
+        present(DescriptionController(), animated: true, completion: nil)
+    }
+    
+    @objc private func openRedDescriptionController(){
+        present(RedDescriptionController(), animated: true, completion: nil)
+    }
+    
+    @objc private func openGreenDescriptionController(){
+        present(GreenDescriptionController(), animated: true, completion: nil)
+    }
+    
+    @objc private func openBlueDescriptionController(){
+        present(BlueDescriptionController(), animated: true, completion: nil)
+    }
+    
+    @objc private func openAdvicesController(){
+        present(AdvicesController(), animated: true, completion: nil)
     }
     
     private func buildConstrints(){

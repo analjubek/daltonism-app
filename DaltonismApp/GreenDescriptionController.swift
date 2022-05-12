@@ -65,15 +65,9 @@ class GreenDescriptionController: UIViewController{
           descriptionContent.textColor = .black
           descriptionContent.text = "   Deuteranopija je težak poremećaj, koji se javlja kad nedostaju čunjevi za prepoznavanje zelene boje, dok je deuteranomalija manje težak poremećaj, gdje čunjevi za prepoznavanje zelene boje postoje, no ne funkcioniraju normalno."
           + "\n\n   Poremećaji prepoznavanja zelene boje su nasljedni i vrlo česti."
-          + "\n\n   U nastavku slijede primjeri kako osobe s deuteranopijom ili deuteranomalijom vide svijet."
+          + "\n\n   U nastavku slijede primjeri kako osobe s deuteranopijom ili deuteranomalijom vide svijet (originalna slika i simulacija daltonizma)."
           descriptionContent.font = UIFont(name: "San Francisco", size: 20)
           descriptionContent.numberOfLines = 0
-          
-          let image = UIImage(named: "daltonizam")
-          imageView = UIImageView(image: image)
-          contentView.addSubview(imageView)
-          imageView.contentMode = .scaleAspectFit
-          imageView.clipsToBounds = true
           
           let origImage1 = UIImage(named: "rgb")
           exampleView1 = UIImageView(image: origImage1)
@@ -125,13 +119,6 @@ class GreenDescriptionController: UIViewController{
               $0.leading.trailing.equalToSuperview().inset(12)
               $0.height.equalTo(270)
           }
-          imageView.snp.makeConstraints{
-              $0.top.equalTo(exampleView2.snp.bottom).offset(200)
-              $0.leading.trailing.equalToSuperview()
-              $0.width.equalToSuperview().inset(10)
-              $0.height.equalTo(400)
-              $0.bottom.equalToSuperview().inset(12)
-          }
           exampleView1.snp.makeConstraints{
               $0.top.equalTo(descriptionContent.snp.bottom).offset(10)
               $0.leading.equalToSuperview()
@@ -149,12 +136,14 @@ class GreenDescriptionController: UIViewController{
               $0.leading.equalToSuperview()
               $0.width.equalToSuperview().dividedBy(2)
               $0.height.equalTo(150)
+              $0.bottom.equalToSuperview()
           }
           exampleView4.snp.makeConstraints{
               $0.top.equalTo(exampleView1.snp.bottom).offset(10)
               $0.leading.equalTo(exampleView1.snp.trailing)
               $0.width.equalToSuperview().dividedBy(2)
               $0.height.equalTo(150)
+              $0.bottom.equalToSuperview()
           }
           
           
